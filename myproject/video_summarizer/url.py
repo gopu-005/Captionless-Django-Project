@@ -1,6 +1,6 @@
 from django.urls import path
 from . import views
 
-urlpattrens = [
+urlpatterns = [
     path('', views.video_summarizer, name='video_summarizer'),
 ]
