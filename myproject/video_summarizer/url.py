@@ -1,4 +1,6 @@
-from django.shortcuts import render, HttpResponse
+from django.urls import path
+from . import views
 
-def home(request):
-    return HttpResponse('Hello This is my First Project')
+urlpattrens = [
+    path("", views.home, name = "home"),
+]
