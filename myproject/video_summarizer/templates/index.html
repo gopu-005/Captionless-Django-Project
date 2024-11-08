@@ -1,0 +1,12 @@
+<h1>YouTube Video Summarizer</h1>
+<form method="POST">
+    {% csrf_token %}
+    <label for="youtube_link">Enter YouTube video link:</label>
+    <input type="text" name="youtube_link" id="youtube_link" required>
+    <button type="submit">Get Detailed Notes</button>
+</form>
+
+{% if summary %}
+    <h2>Summary:</h2>
+    <p>{{ summary }}</p>
+{% endif %}
